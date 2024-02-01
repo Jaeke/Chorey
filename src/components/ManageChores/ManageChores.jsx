@@ -13,12 +13,13 @@
  */
 
 import { useState } from 'react';
+import { useResponsibility } from '../../context';
 
 function ManageChores() {
-  const [chores, setChores] = useState([]);
+  const { chores, setChores, frequency, setFrequency, type, setType } =
+    useResponsibility();
+
   const [newChore, setNewChore] = useState('');
-  const [frequency, setFrequency] = useState(1);
-  const [type, setType] = useState('weekly');
 
   const addChore = () => {
     if (newChore) {
