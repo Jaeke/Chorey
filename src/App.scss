@@ -1,5 +1,26 @@
 .main-page-container {
   // background-color: red;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.users-chores-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.calendar-section {
+  width: auto;
+  padding: 10px;
+  box-sizing: border-box;
+
+  .ant-picker-calendar.ant-picker-calendar-full .ant-picker-calendar-date {
+    height: 200px;
+  }
 }

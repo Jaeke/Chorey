@@ -3,7 +3,10 @@
  */
 
 import { useState } from 'react';
+
 import { useResponsibility } from '../../context';
+
+import './CreateUsers.scss';
 
 const CreateUsers = () => {
   const { users, setUsers } = useResponsibility();
@@ -28,12 +31,17 @@ const CreateUsers = () => {
   };
 
   return (
-    <div>
+    <div className={`create-user-container`}>
       <h2>Add Users</h2>
 
-      <ul>
-        {users.length > 0 && users.map((user, i) => <li key={i}>{user}</li>)}
-      </ul>
+      <div className={`registered-users-container`}>
+        {users.length > 0 &&
+          users.map((user, i) => (
+            <div key={i} className={`individual-user-container`}>
+              {user}
+            </div>
+          ))}
+      </div>
 
       <div>
         <input type="text" value={inputValue} onChange={handleInputChange} />

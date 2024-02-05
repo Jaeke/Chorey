@@ -13,7 +13,10 @@
  */
 
 import { useState } from 'react';
+
 import { useResponsibility } from '../../context';
+
+import './ManageChores.scss';
 
 function ManageChores() {
   const { chores, setChores, frequency, setFrequency, type, setType } =
@@ -55,13 +58,13 @@ function ManageChores() {
       </div>
       <div>
         <h3>Chore List</h3>
-        <ul>
+        <div className={`registered-chores-list`}>
           {chores.map((chore, index) => (
-            <li
+            <span
               key={index}
-            >{`${chore.chore} - ${chore.frequency} times ${chore.type}`}</li>
+            >{`${chore.chore} - ${chore.frequency} times ${chore.type}`}</span>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

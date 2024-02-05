@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="main-page-container">
       <ResponsibilityProvider>
-        <div>
+        <div className={`users-chores-section`}>
           <CreateUsers />
           <ManageChores />
         </div>
 
-        <div>
+        <div className={`calendar-section`}>
           <ChoresCalendar />
         </div>
       </ResponsibilityProvider>

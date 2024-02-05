@@ -1,0 +1,11 @@
+.daily-chores {
+  // background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  span {
+    text-transform: capitalize;
+    font-size: 0.9em;
+  }
+}

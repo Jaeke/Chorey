@@ -1,0 +1,10 @@
+.registered-chores-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  span {
+    font-size: 0.9em;
+    text-transform: capitalize;
+  }
+}

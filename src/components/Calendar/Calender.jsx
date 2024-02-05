@@ -15,6 +15,8 @@ import html2canvas from 'html2canvas';
 
 import { useResponsibility } from '../../context';
 
+import './Calendar.scss';
+
 const ChoreCalendar = () => {
   const { users, chores } = useResponsibility();
   const [choreSchedule, setChoreSchedule] = useState({});
@@ -167,13 +169,13 @@ const ChoreCalendar = () => {
     const dayChores = choreSchedule[dateString] || [];
 
     return (
-      <ul className="daily-chores">
+      <div className="daily-chores">
         {dayChores.map(({ chore, user }, index) => (
-          <li key={index} style={{ fontSize: '0.8em' }}>
+          <span key={index}>
             {chore} - {user}
-          </li>
+          </span>
         ))}
-      </ul>
+      </div>
     );
   };
 

@@ -1,0 +1,12 @@
+.create-user-container {
+  // background-color: red;
+}
+
+.registered-users-container {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.9em;
+  text-transform: capitalize;
+}
