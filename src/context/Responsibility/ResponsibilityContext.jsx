@@ -44,3 +44,14 @@ export const ResponsibilityProvider = ({ children }) => {
 ResponsibilityProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
+
+/**
+users = ["Jake", "Michelle", "Maureen"]\
+
+chores = [
+  {chore: "dusting", frequency: 1, type: "weekly"},
+  {chore: "mopping", frequency: 2, type: "weekly"},
+  {chore: "garbage", frequency: 7, type: "weekly"},
+  {chore: "deep clean", frequency: 1, type: "monthly"},
+]
+ */

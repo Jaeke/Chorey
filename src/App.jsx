@@ -1,6 +1,7 @@
-import './App.scss';
-import { CreateUsers, ManageChores } from './components';
+import { ChoresCalendar, CreateUsers, ManageChores } from './components';
 import { ResponsibilityProvider } from './context/Responsibility/ResponsibilityContext';
+
+import './App.scss';
 
 function App() {
   return (
@@ -9,6 +10,10 @@ function App() {
         <div>
           <CreateUsers />
           <ManageChores />
+        </div>
+
+        <div>
+          <ChoresCalendar />
         </div>
       </ResponsibilityProvider>
     </div>
